@@ -1,8 +1,8 @@
 package PageObject;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,18 +30,31 @@ public class LoginPage {
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement loginButton;
 	
-	public void setUserName(){
+	@FindBy(xpath="//span[@class='oxd-topbar-header-breadcrumb']")
+	WebElement DashboardText;
+	
+	public void setUserName(String userName){
 		UserName.clear();
-		UserName.sendKeys("Admin");
+		UserName.sendKeys(userName);
 	}
-	public void setPassword(){
+	public void setPassword(String pwd){
 		PassWord.clear();
-		PassWord.sendKeys("admin123");
+		PassWord.sendKeys(pwd);
 	}
 	public void clickLoginButton(){
 		loginButton.click();
 	}
 	public WebElement getElementCompanyLogo() {
 		return companyLogo;
+	}
+	public WebElement getElementDashboard() {
+		return DashboardText;
+	}
+	
+	public void performLogin(String name,String pwd) {
+		setUserName(name);
+		setPassword(pwd);
+		clickLoginButton();
+		Assert.assertTrue(getElementDashboard().isDisplayed());
 	}
 }

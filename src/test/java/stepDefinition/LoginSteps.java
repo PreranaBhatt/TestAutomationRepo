@@ -24,6 +24,12 @@ public class LoginSteps {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 	    lPage.getElementCompanyLogo().isDisplayed();
 	}
+	
+	@Then("user logs in to the website as valid user")
+	public void user_logs_in_to_the_website_as_valid_user(){
+		lPage.performLogin("Admin", "admin123");
+	}
+	
 	@Then("user quit browser")
 	public void user_quit_browser() {
 		driver.quit();

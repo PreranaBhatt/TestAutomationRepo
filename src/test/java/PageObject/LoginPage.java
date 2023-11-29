@@ -33,6 +33,9 @@ public class LoginPage {
 	@FindBy(xpath="//span[@class='oxd-topbar-header-breadcrumb']")
 	WebElement DashboardText;
 	
+	@FindBy(xpath="//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")
+	WebElement InvalidCredentialText;
+	
 	public void setUserName(String userName){
 		UserName.clear();
 		UserName.sendKeys(userName);
@@ -50,11 +53,21 @@ public class LoginPage {
 	public WebElement getElementDashboard() {
 		return DashboardText;
 	}
+	public WebElement getElementInvalidCredText() {
+		return InvalidCredentialText;
+	}
 	
-	public void performLogin(String name,String pwd) {
+	public void performValidLogin(String name,String pwd) {
 		setUserName(name);
 		setPassword(pwd);
 		clickLoginButton();
 		Assert.assertTrue(getElementDashboard().isDisplayed());
+	}
+	
+	public void performInvalidLogin(String name,String pwd) {
+		setUserName(name);
+		setPassword(pwd);
+		clickLoginButton();
+		Assert.assertTrue(getElementInvalidCredText().isDisplayed());
 	}
 }

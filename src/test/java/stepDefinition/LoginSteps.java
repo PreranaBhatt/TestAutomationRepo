@@ -27,7 +27,12 @@ public class LoginSteps {
 	
 	@Then("user logs in to the website as valid user")
 	public void user_logs_in_to_the_website_as_valid_user(){
-		lPage.performLogin("Admin", "admin123");
+		lPage.performValidLogin("Admin", "admin123");
+	}
+	
+	@Then("user logs in to the website as Invalid user")
+	public void user_logs_in_to_the_website_as_Invalid_user(){
+		lPage.performInvalidLogin("InvalidAdmin", "invalid");
 	}
 	
 	@Then("user quit browser")

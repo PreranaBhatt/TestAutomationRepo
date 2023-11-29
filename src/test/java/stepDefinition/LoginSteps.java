@@ -14,15 +14,15 @@ public class LoginSteps {
 	@Given("user launches chrome browser")
 	public void  user_launches_chrome_browser() {
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
-		System.setProperty("webdriver.chrome.driver","D:\\Prerana Workspace\\Project1\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","D:\\PreranaAutomationProject\\TestAutomationRepo\\Drivers\\chromedriver.exe");
 		driver= new ChromeDriver();
+		driver.manage().window().maximize();
 		lPage = new LoginPage(driver);
 	}
 	@Given("user Lauches orangehrm website")
 	public void user_lauches_orangehrm_website() throws InterruptedException {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
-		driver.manage().window().maximize();
-		lPage.getElementCompanyLogo().isDisplayed();
+	    lPage.getElementCompanyLogo().isDisplayed();
 	}
 	@Then("user quit browser")
 	public void user_quit_browser() {

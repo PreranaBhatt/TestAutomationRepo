@@ -15,7 +15,7 @@ public class LoginSteps {
 	public void  user_launches_chrome_browser() {
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		String path = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver",path+"\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",path+"//Drivers//chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		lPage = new LoginPage(driver);

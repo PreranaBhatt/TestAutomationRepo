@@ -16,7 +16,9 @@ public class BaseStep {
             System.setProperty("webdriver.http.factory", "jdk-http-client");
             ChromeOptions options = new ChromeOptions();
             options.setBrowserVersion("stable");
-            options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--headless");
             driver = new ChromeDriver(options);
             return driver;
         }

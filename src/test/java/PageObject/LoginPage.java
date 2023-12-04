@@ -11,10 +11,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 	WebDriver driver;
-    WebDriverWait wait;
 	public LoginPage(WebDriver rDriver) {
-		PageFactory.initElements(rDriver, this);
-		rDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		this.driver =rDriver;
+		PageFactory.initElements(driver, this);
+		rDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 		
 

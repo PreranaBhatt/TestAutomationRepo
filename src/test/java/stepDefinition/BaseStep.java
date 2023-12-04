@@ -19,6 +19,7 @@ public class BaseStep {
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
             options.addArguments("--headless");
+            options.addArguments("--disable-gpu");
             driver = new ChromeDriver(options);
             return driver;
         }

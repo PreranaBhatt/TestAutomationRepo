@@ -1,5 +1,12 @@
-D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\stepDefinition\SignIN.java
+D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\stepDefinition\HambergerMenuSteps.java
+D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\stepDefinition\Hooks.java
 D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\testrunner\testrun.java
+D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\PageObject\Homepage\HomePage.java
 D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\PageObject\LoginPage.java
+D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\stepDefinition\HomepageSteps.java
+D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\PageObject\Homepage\HambergerMenuPage.java
 D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\stepDefinition\LoginSteps.java
+D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\stepDefinition\BaseStep.java
 D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\stepDefinition\MyStepdefs.java
+D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\Utilities\Helper.java
+D:\PreranaAutomationProject\TestAutomationRepo\src\test\java\PageObject\BasePage.java

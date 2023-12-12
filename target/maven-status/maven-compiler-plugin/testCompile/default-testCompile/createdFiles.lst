@@ -1,5 +1,0 @@
-testrunner\testrun.class
-stepDefinition\LoginSteps.class
-stepDefinition\MyStepdefs.class
-PageObject\LoginPage.class
-stepDefinition\SignIN.class

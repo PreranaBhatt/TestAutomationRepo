@@ -1,13 +1,9 @@
 package stepDefinition;
 
-import Utilities.Helper;
-import io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.Serializers;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import PageObject.LoginPage;
+import Utilities.Helper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.support.PageFactory;
 
 public class LoginSteps extends BaseStep {
 
@@ -17,7 +13,6 @@ public class LoginSteps extends BaseStep {
 	}
 	@Given("user Launches orangehrm website")
 	public void user_lauches_orangehrm_website() throws InterruptedException {
-		//Helper.getDriver().get("https://opensource-demo.orangehrmlive.com/");
         Helper.openPage("https://opensource-demo.orangehrmlive.com/");
 		lpage.getElementCompanyLogo().isDisplayed();
 	}

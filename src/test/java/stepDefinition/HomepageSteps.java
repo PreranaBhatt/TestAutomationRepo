@@ -3,6 +3,7 @@ package stepDefinition;
 import PageObject.Homepage.HomePage;
 import Utilities.Helper;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
 public class HomepageSteps extends BaseStep{
@@ -12,4 +13,5 @@ public class HomepageSteps extends BaseStep{
      homepage = new HomePage(Helper.getDriver());
      Assert.assertTrue("drpdwn isn't displayed",homepage.getUserDrpdwnElement().isDisplayed());
     }
+
 }

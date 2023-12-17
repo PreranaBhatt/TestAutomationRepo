@@ -32,4 +32,9 @@ public class HambergerMenuSteps extends BaseStep {
     public void user_On_Hamberger_Menu_Section_Enter_Text_My_Info(String searchKey) throws InterruptedException {
         new HambergerMenuPage(Helper.getDriver()).performSearch(searchKey);
     }
+
+    @Then("User on verify search detail")
+    public void userOnVerifySearchDetail() {
+
+    }
 }

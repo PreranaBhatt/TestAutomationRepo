@@ -74,8 +74,10 @@ public class HambergerMenuPage extends BasePage {
     menuSearchIcon.sendKeys(Keys.ENTER);
 
     menuList.get(0).click();
-
     Thread.sleep(10000);
-    Assert.assertTrue(elePersonalDetail.isDisplayed());
+    }
+
+    public void verifySearchResultPageForMyInfo(){
+        Assert.assertTrue(elePersonalDetail.isDisplayed());
     }
 }

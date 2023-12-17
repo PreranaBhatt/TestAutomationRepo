@@ -28,7 +28,7 @@ public static Helper helper;
             options.setBrowserVersion("stable");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--headless");
+          //  options.addArguments("--headless");
             options.addArguments("--disable-gpu");
             driver = new ChromeDriver(options);}
         else{
@@ -37,6 +37,7 @@ public static Helper helper;
             options.setBrowserVersion("stable");
             driver = new FirefoxDriver(options);
         }
+        driver.manage().window().maximize();
         return driver;
 }
     public static WebDriver getDriver(){

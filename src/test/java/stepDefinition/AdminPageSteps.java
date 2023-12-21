@@ -1,6 +1,6 @@
 package stepDefinition;
 
-import PageObject.AdminPage;
+import PageObject.Homepage.AdminPage;
 import Utilities.Helper;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;

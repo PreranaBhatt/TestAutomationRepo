@@ -72,9 +72,8 @@ public class HambergerMenuPage extends BasePage {
         menuSearchIcon.sendKeys(Keys.CLEAR);
     menuSearchIcon.sendKeys(searchKey);
     menuSearchIcon.sendKeys(Keys.ENTER);
-
     menuList.get(0).click();
-    Thread.sleep(10000);
+    Thread.sleep(5000);
     }
 
     public void verifySearchResultPageForMyInfo(){

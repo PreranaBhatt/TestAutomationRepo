@@ -1,5 +1,6 @@
-package PageObject;
+package PageObject.Homepage;
 
+import PageObject.BasePage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class AdminPage extends BasePage{
+public class AdminPage extends BasePage {
 WebDriver driver;
 
     public AdminPage(WebDriver rdriver) {
